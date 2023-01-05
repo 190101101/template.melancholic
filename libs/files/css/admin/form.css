@@ -1,0 +1,136 @@
+.admin-form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 7px;
+  border: 1px solid #393a3b;
+}
+
+.admin-form .form-box {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	width: 100%;
+	margin: 2px 0px;
+}
+
+.admin-form .form-box div:nth-child(1){
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  border: 2px solid #393a3b;
+	width: 5%;
+}
+
+.admin-form .form-box div:nth-child(1) img{
+	max-width: 20px;
+	max-height: 20px;
+	min-width: 14px;
+	min-height: 14px;
+}
+
+.admin-form .form-box div:nth-child(2){
+	display: flex;
+	justify-content: center;
+	width: 94%;
+}
+
+.admin-form .form-box div:nth-child(2) input{
+    border: 2px solid #393a3b;
+	width: 100%;
+	padding: 4px 10px;
+	color:  #b0b3b8;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.admin-form .form-box div:nth-child(2) input::placeholder{
+	color: #393a3b;
+}
+
+.admin-form .form-box div:nth-child(2) button{
+	padding: 4px 70px;
+	color: #393a3b;
+    border: 2px solid #393a3b;
+}
+
+.admin-form .form-box div:nth-child(2) button:hover{
+    background: #393a3b;
+    color: #b0b3b8;
+}
+
+.admin-form .form-box div:nth-child(2) select{
+	display: flex;
+    color: #393a3b;
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    border: 2px solid #393a3b;
+    padding: 5px 10px;
+    transition: all .2s linear;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.admin-form .form-box div:nth-child(2) option {
+    color: #b0b3b8;
+    transition: all .2s linear;
+    background: #080C0F;
+    border: 2px solid #393a3b;
+    outline: none;
+}
+
+/*file*/
+.admin-form .form-box input[type=file]::-webkit-file-upload-button{
+  background-color: #14171a;
+  outline: none;
+  border: none;
+  color: #8ac832;
+  width: 50%;
+}
+
+.admin-form .form-box input[type=file]::-webkit-file-upload-button:hover{
+  background-color: #14171a;
+  outline: none;
+  border: none;
+  color: #e84118;
+}
+
+.admin-form .form-box input[type=file]{
+  padding: 0;
+  color: #e84118;
+} 
+
+.admin-form .form-box input[type=file]:hover{
+  transition: all .2s linear;
+  color: #8ac832;
+}
+
+.form-box .input-divide{
+	display: flex;
+	justify-content: space-between !important;
+}
+
+.form-box .input-divide input{
+	color:  #8ac832 !important;
+	width: 49.5% !important;
+}
+
+.form-editor {
+  border: 2px solid #393a3b;
+	margin: 2px 0px;
+	width: 100%;
+}
+
+.admin-update-table{
+	padding: 0px 10px 30px 10px;
+  border: 2px solid #393a3b;
+}
+
+@media screen and (max-width: 967px){
+	.admin-update-table{
+		padding: 15px 10px;
+	}
+}
